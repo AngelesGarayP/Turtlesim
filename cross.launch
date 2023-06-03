@@ -1,0 +1,18 @@
+<launch>
+	
+	<node pkg="turtlesim" type="turtlesim_node" name="el_turlesim" />
+
+	<node pkg="rosservice" type="rosservice" name="kill_turtle_1" 
+		  args="call /kill 'turtle1'"/>
+
+	<node pkg="rosservice" type="rosservice" name="load_turtle3" 
+		  args="call /spawn 5 1 0 'turtle3'"/>
+
+	<node pkg="rosservice" type="rosservice" name="load_turtle4" 
+		  args="call /spawn 1 5 0 'turtle4'"/>	
+	
+	<node pkg="tmara_move" type="crossbot.py" name="cross" />
+
+    <node pkg="tmara_move" type="crossdummy.py" name="crossdum" />
+
+</launch>

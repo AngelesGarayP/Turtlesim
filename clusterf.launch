@@ -1,0 +1,25 @@
+<launch>
+	
+	<node pkg="turtlesim" type="turtlesim_node" name="el_turlesim" />
+
+	<node pkg="rosservice" type="rosservice" name="kill_turtle_1" args="call /kill 'turtle1'"/>
+
+	<!-- <node pkg="rosservice" type="rosservice" name="color_turtle0" args="call /turtle0/set_pen 255 0 0 5 ON"/> -->
+	<node pkg="rosservice" type="rosservice" name="load_turtle0" args="call /spawn 1 1 0.785398 'turtle0'"/>
+	<!-- arg="call /turtle0/set_pen 255 0 0"/> -->
+
+	<node pkg="rosservice" type="rosservice" name="load_turtle2" args="call /spawn 10 1 2.35619 'turtle2'"/>	
+	
+	<node pkg="rosservice" type="rosservice" name="load_turtle3" args="call /spawn 10 10 225 'turtle3'"/>	
+
+	<node pkg="rosservice" type="rosservice" name="load_turtle4" args="call /spawn 1 10 315 'turtle4'"/>
+
+    <node pkg="tmara_move" type="cf1.py" name="f1" output="screen"/>
+
+    <node pkg="tmara_move" type="cf2.py" name="f2" />
+
+    <node pkg="tmara_move" type="cf3.py" name="f3" />
+
+    <node pkg="tmara_move" type="cf4.py" name="f4" />
+
+</launch>
