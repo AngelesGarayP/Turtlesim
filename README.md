@@ -1,4 +1,7 @@
 # Turtlesim
+
+In this project, 4 simulation exercises are carried out in Turtlesim, the ROS simulator for differential type traction robots. Exercises are developed based on the realization of rectangular and curved trajectories, speed changes, collision routes and obstacle avoidance. The functions "orientate()", "go_to_goal()", the topic pose, Twist() type speed message, and functions such as "avoid_crash()" are used, in addition the Euclidean distance formula is also used.
+
 Simulaciones en ROS Turtlesim
 A continuación se enumeran los ejercicios de simulación en ROS que se presentarán como parte de la evaluación del Módulo 1, basados principalmente en la evasión de obstáculos y la identificación de los modelos de cinemática inversa y directa de un robot móvil con tracción de tipo diferencial.
 
